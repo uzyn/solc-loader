@@ -9,6 +9,7 @@
     "url": "https://github.com/uzyn/solc-loader"
   },
   "dependencies": {
+    "loader-utils": "0.2.x",
     "solc": "^0.3.1-1"
   }
 }
