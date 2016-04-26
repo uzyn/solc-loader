@@ -17,7 +17,7 @@ module.exports = function (source) {
     var contract = compiled.contracts[name];
     if (compiled.contracts.hasOwnProperty(name)) {
       results[name] = {
-        interface: JSON.parse(contract.interface),
+        abi: JSON.parse(contract.interface),
         bytecode: contract.bytecode,
       };
     }
