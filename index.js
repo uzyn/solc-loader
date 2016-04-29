@@ -1,13 +1,23 @@
 'use strict';
-var parseQuery = require('loader-utils').parseQuery;
+var loaderUtils = require('loader-utils');
 var solc = require('solc');
 
 module.exports = function (source) {
   this.cacheable && this.cacheable();
-  var query = parseQuery(this.query);
+  var config = loaderUtils.getLoaderConfig(this, 'solcLoader');
+  console.log(config);
   var optimize = 1;
-  if (query.hasOwnProperty('optimize')) {
-    optimize = (query.optimize) ? '1' : '0';
+  if (config.hasOwnProperty('optimize')) {
+    switch (config.optimize) {
+      case '0':
+        optimize = '0';
+        break;
+      case 'false':
+        optimize = '0';
+        break;
+      default:
+        optimize = (config.optimize) ? '1': '0';
+    }
   }
 
   var compiled = solc.compile(source, optimize);
