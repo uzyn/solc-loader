@@ -5,7 +5,6 @@ var solc = require('solc');
 module.exports = function (source) {
   this.cacheable && this.cacheable();
   var config = loaderUtils.getLoaderConfig(this, 'solcLoader');
-  console.log(config);
   var optimize = 1;
   if (config.hasOwnProperty('optimize')) {
     switch (config.optimize) {
