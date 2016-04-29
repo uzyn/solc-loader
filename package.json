@@ -1,7 +1,7 @@
 {
   "name": "solc-loader",
   "version": "1.0.0-rc.3",
-  "author": "U-Zyn Chua <chua@uzyn.com>",
+  "author": "U-Zyn Chua <chua@uzyn.com> (http://uzyn.com)",
   "description": "Ethereum Solidity module for Webpack",
   "license": "MIT",
   "repository": {
@@ -14,7 +14,8 @@
     "solc",
     "webpack",
     "blockchain",
-    "smart contract"
+    "smart contract",
+    "web3"
   ],
   "dependencies": {
     "loader-utils": "0.2.x",
