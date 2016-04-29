@@ -55,7 +55,7 @@ module.exports = {
 
 ### Optimization
 
-`solc-loader` is set to compile with optimization turned on.
+`solc-loader` is set, by default, to compile with optimization turned on.
 
 To turn off optimization, pass `optimize=0` via either query or loader config with the key `solcLoader`.
 
@@ -65,13 +65,13 @@ To turn off optimization, pass `optimize=0` via either query or loader config wi
 loaders: ['solc?optimize=0']
 
 // or
-
 loader: 'solc?optimize=0'
 ```
 
 #### Config style
 
 ```js
+// webpack.config.js
 module.exports = {
   solcLoader: {
     optimize: 0
@@ -81,3 +81,5 @@ module.exports = {
 
 ## License
 MIT · [U-Zyn Chua](http://uzyn.com) ([@uzyn](http://twitter.com/uzyn))
+
+Tips: `0xFfA57D3e88A24311565C9929F180739E43FBD0aA`
