@@ -1,6 +1,6 @@
 {
   "name": "solc-loader",
-  "version": "0.0.1",
+  "version": "1.0.0-rc.1",
   "author": "U-Zyn Chua <chua@uzyn.com>",
   "description": "solc loader module for webpack (WIP)",
   "license": "MIT",
