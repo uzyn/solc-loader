@@ -1,6 +1,6 @@
 {
   "name": "solc-loader",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0-rc.2",
   "author": "U-Zyn Chua <chua@uzyn.com>",
   "description": "Ethereum Solidity module for Webpack",
   "license": "MIT",
@@ -12,7 +12,7 @@
     "solidity",
     "ethereum",
     "solc",
-    "webpack"
+    "webpack",
     "blockchain",
     "smart contract"
   ],
