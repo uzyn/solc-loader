@@ -4,6 +4,10 @@ Compiles `.sol` with [JavaScript Solidity compiler](https://github.com/chriseth/
 
 Ideally to be used with [web3-loader](https://github.com/uzyn/web3-loader) for automatic deployment and ready-to-use JavaScript instances of smart contracts.
 
+##### Sample code
+
+Sample dapp or starter kit can be found at [uzyn/ethereum-webpack-example-dapp](https://github.com/uzyn/ethereum-webpack-example-dapp).
+
 ## Installation
 
 ```bash
