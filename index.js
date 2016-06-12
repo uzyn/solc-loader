@@ -22,6 +22,10 @@ module.exports = function (source) {
   var compiled = solc.compile(source, optimize);
   var results = {};
 
+  if ('errors' in compiled) {
+    throw new Error(compiled.errors.join('\n'));
+  }
+
   for (var name in compiled.contracts) {
     var contract = compiled.contracts[name];
     if (compiled.contracts.hasOwnProperty(name)) {
