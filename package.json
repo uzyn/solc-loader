@@ -19,6 +19,6 @@
   ],
   "dependencies": {
     "loader-utils": "0.2.x",
-    "solc": "^0.3.5"
+    "solc": "*"
   }
 }
